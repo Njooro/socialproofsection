@@ -156,3 +156,83 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+@media (max-width: 375px){
+    .head-ratings{
+        display: flex;
+        flex-direction: column;
+    }   
+    @media (max-width: 375px) {
+        .grid-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 375px;
+            padding: 10px;
+        }
+    
+        /* Center Header */
+        .header {
+            max-width: 100%;
+            text-align: center;
+            font-size: var(--fs-600);
+        }
+    
+        /* Stars Container Below Header */
+        .stars-container {
+            
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .stars-container > * {
+            max-width: 100%;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+        }
+        .reviews.stars {
+            flex-direction: row; /* Ensure stars and text remain horizontal */
+            justify-content: center;
+            max-width: 90%;
+        }
+        .guru.stars {
+            flex-direction: row; /* Ensure stars and text remain horizontal */
+            justify-content: center;
+            max-width: 90%;
+        }
+        .best-tech.stars {
+            flex-direction: row; /* Ensure stars and text remain horizontal */
+            justify-content: center;
+            max-width: 90%;
+        }
+        .reviews{
+            transform: translateX(0px);
+        }
+        .guru{
+            transform: translateX(0px);
+        }
+        .best-tech{
+            transform: translateX(0px);
+        
+        }
+        /* Stack Testimonials */
+        .testimonials {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+    
+        .card {
+            width: 90%;
+            text-align: center;
+        }
+    
+        .buyer-details {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
